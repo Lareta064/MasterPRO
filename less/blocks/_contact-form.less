@@ -1,0 +1,229 @@
+/***********************************/
+/* Стили для содержимого popup окна */
+input,
+textarea {
+  color: #000;
+  border: none;
+  border-radius: 3px;
+  background: transparent;
+  font-size: 14px;
+  margin: 0 0 10px;
+  padding: 5px;
+  width: 100%;
+  line-height: 1.5;
+
+}
+input:focus {
+  border-color: #808080;
+  outline: none;
+}
+textarea:focus {
+  border-color: #808080;
+  outline: none;
+}
+/* Окно */
+.overlay_popup {
+  /*display: block;*/
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.5;
+}
+.popup {
+  display: none;
+  /*display: block;*/
+  position: relative;
+  z-index: 1000;
+  margin: 0 25% 0 25%;
+  width: 50%;
+}
+/* Ещё немного стилей для popup окна */
+.object {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: rgba(51, 51, 51, .8);
+  position: fixed;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+@media (min-width: 768px) {
+  .object {
+    width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  .object {
+    width: 55%;
+  }
+}
+.object h4 {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+input[type="submit"] {
+  color: #fff;
+  
+  background-color: inherit;
+  display: block;
+  width: 150px;
+  float: right;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+input[type="submit"]:hover {
+  color: rgb(153, 153, 153);
+  background-color: #3c444799;
+}
+input[type="submit"]:active {
+  color: #333;
+  background-color: rgb(204, 204, 204);
+}
+label.error {
+  font-size: 12px;
+  color: red;
+}
+/*окно благодарность*/
+.contact-form__success {
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  line-height: 34px;
+  width: 100%;
+  height: auto;
+  background-color: #f3f8fb;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+/*крестик закрыть окно*/
+#form-close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  color: #aac4d4;
+  font-size: 24px;
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+  &:hover{
+    color: #fff;
+  }
+}
+
+input{
+    display: block;
+    font-size: 14px;
+    color: #de9043;
+    margin-right: 5px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border-bottom: 2px solid #fff;
+    &::placeholder {
+      color: #de9043;
+      font-size: 17px;
+    }
+    @media (min-width: 1200px){
+        display: inline-block;
+        font-size: 17px;
+        margin-bottom: 25px;
+    }  
+     @media (min-width: 1600px){
+        font-size: 21px;
+        margin-bottom: 30px;
+        
+    }    
+}
+/*page-form*/
+.page-form {
+  @media (min-width: 768px){
+  max-width: 480px;
+  background-color: rgba(0,0,0, .75);
+  position: absolute;
+  border-radius:15px;
+   padding: 30px 40px;
+  
+  font-family: 'FedraSansPro Light', sans-serif;
+  
+    width: 40%;
+    top: 30%;
+    right: 6%;
+  }
+  
+  @media (min-width: 1200px){
+      top: 23%;
+       width: 35%;
+  }
+   @media (min-width: 1400px){
+      top: 41%;
+      width: 40%;
+  }
+
+    @media (min-width: 1600px){
+      width: 40%;
+      top: 50%;
+      right: 6%;
+      padding: 40px 60px;
+    }
+}
+.page-form  p {
+  font-size: 33px;
+  line-height: 33px; 
+  text-align: center;
+  
+  letter-spacing: 1px;
+  @media (min-width: 1200px){
+    font-size: 24px;
+    line-height: 24px;
+   }
+   @media (min-width: 1600px){
+    font-size: 33px;
+    line-height: 33px;
+   }
+}
+/*кнопка формы*/
+.page-form input[type="submit"]{
+  width: 100%;
+  height: 55px;
+  background-color: rgb(255,110,26);
+  text-align: center;
+  color: #fff;
+  font-size: 17px;
+  border-bottom: none;
+  &:hover{
+    color: rgb(204,204,204);
+    background-color: transparent;
+    height: 55px;
+    border: 2px solid rgb(255,110,26)
+  }
+  &:active{
+    color: rgb(204,204,204);
+    background-color: rgb(255,110,26);
+    height: 55px;
+    border: 0px solid rgb(255,110,26)
+  }
+
+}
+.page-form #contact-form input[type="checkbox"]{
+    display:inline-block;
+    text-align: left;
+}

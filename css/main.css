@@ -1,0 +1,813 @@
+/*
+ * Box-sizing-model
+ */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*
+ * Responsive images
+*/
+/*img {
+  max-width: 100%;
+  height: auto;
+}*/
+/*
+ * Cursor change on hover on Buttons
+*/
+input[type="submit"] {
+  cursor: pointer;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+.clear {
+  clear: both;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+@font-face {
+  font-family: FedraSansPro Bold;
+  src: url("../fonts/FedraSansPro Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: FedraSansPro Normal;
+  src: url("../fonts/FedraSansPro Normal.ttf") format("opentype");
+}
+@font-face {
+  font-family: FedraSansPro Demi;
+  src: url("../fonts/FedraSansPro Demi.otf") format("opentype");
+}
+@font-face {
+  font-family: FedraSansPro Light;
+  src: url("../fonts/FedraSansPro Light.otf") format("opentype");
+}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  font-family: 'FedraSansPro Normal', sans-serif;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  color: #303030;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #777;
+}
+ul {
+  list-style-type: none;
+}
+.block {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  text-align: center;
+  color: red;
+  background-color: #c6c6c6;
+}
+.line {
+  width: 95%;
+  height: 2px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #cccccc;
+}
+.section__paragraf.margin-40 {
+  margin-bottom: 70px;
+}
+.padding-top-20 {
+  padding-top: 20px;
+}
+.padding-top-20 img {
+  margin-bottom: 40px;
+}
+.cmn-toggle-switch {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  top: 35px;
+  right: 5px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 16;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  height: 45px;
+  font-size: 0;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+@media (min-width: 480px) {
+  .cmn-toggle-switch {
+    right: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .cmn-toggle-switch {
+    display: none;
+  }
+}
+.cmn-toggle-switch:focus {
+  outline: none;
+}
+.cmn-toggle-switch span {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  right: 5px;
+  height: 5px;
+  background: #e16e1a;
+}
+.cmn-toggle-switch span::before,
+.cmn-toggle-switch span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #e16e1a;
+  content: "";
+}
+.cmn-toggle-switch span::before {
+  top: -12px;
+}
+.cmn-toggle-switch span::after {
+  bottom: -12px;
+}
+/**
+ * Style 2
+ */
+.cmn-toggle-switch__htx {
+  background-color: transparent;
+}
+.cmn-toggle-switch__htx span {
+  -webkit-transition: background 0 0.3s;
+  transition: background 0 0.3s;
+}
+.cmn-toggle-switch__htx span::before,
+.cmn-toggle-switch__htx span::after {
+  -webkit-transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s;
+  -webkit-transition-delay: 0.3s, 0;
+  transition-delay: 0.3s, 0;
+}
+.cmn-toggle-switch__htx span::before {
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, -webkit-transform;
+  transition-property: top, transform;
+  transition-property: top, transform, -webkit-transform;
+}
+.cmn-toggle-switch__htx span::after {
+  -webkit-transition-property: bottom, -webkit-transform;
+  transition-property: bottom, -webkit-transform;
+  transition-property: bottom, transform;
+  transition-property: bottom, transform, -webkit-transform;
+}
+/* active state*/
+.cmn-toggle-switch__htx.active {
+  position: fixed;
+}
+.cmn-toggle-switch__htx.active span {
+  background: none;
+}
+.cmn-toggle-switch__htx.active span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.cmn-toggle-switch__htx.active span::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.cmn-toggle-switch__htx.active span::before,
+.cmn-toggle-switch__htx.active span::after {
+  -webkit-transition-delay: 0, 0.3s;
+  transition-delay: 0, 0.3s;
+}
+/***********************************/
+/* Стили для содержимого popup окна */
+input,
+textarea {
+  color: #000;
+  border: none;
+  border-radius: 3px;
+  background: transparent;
+  font-size: 14px;
+  margin: 0 0 10px;
+  padding: 5px;
+  width: 100%;
+  line-height: 1.5;
+}
+input:focus {
+  border-color: #808080;
+  outline: none;
+}
+textarea:focus {
+  border-color: #808080;
+  outline: none;
+}
+/* Окно */
+.overlay_popup {
+  /*display: block;*/
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.5;
+}
+.popup {
+  display: none;
+  /*display: block;*/
+  position: relative;
+  z-index: 1000;
+  margin: 0 25% 0 25%;
+  width: 50%;
+}
+/* Ещё немного стилей для popup окна */
+.object {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: rgba(51, 51, 51, 0.8);
+  position: fixed;
+  bottom: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+@media (min-width: 768px) {
+  .object {
+    width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  .object {
+    width: 55%;
+  }
+}
+.object h4 {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+input[type="submit"] {
+  color: #fff;
+  background-color: inherit;
+  display: block;
+  width: 150px;
+  float: right;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+input[type="submit"]:hover {
+  color: #999999;
+  background-color: #3c444799;
+}
+input[type="submit"]:active {
+  color: #333;
+  background-color: #cccccc;
+}
+label.error {
+  font-size: 12px;
+  color: red;
+}
+/*окно благодарность*/
+.contact-form__success {
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  line-height: 34px;
+  width: 100%;
+  height: auto;
+  background-color: #f3f8fb;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+/*крестик закрыть окно*/
+#form-close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  color: #aac4d4;
+  font-size: 24px;
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+}
+#form-close:hover {
+  color: #fff;
+}
+input {
+  display: block;
+  font-size: 14px;
+  color: #de9043;
+  margin-right: 5px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: transparent;
+  border-bottom: 2px solid #fff;
+}
+input::-webkit-input-placeholder {
+  color: #de9043;
+  font-size: 17px;
+}
+input:-ms-input-placeholder {
+  color: #de9043;
+  font-size: 17px;
+}
+input::-ms-input-placeholder {
+  color: #de9043;
+  font-size: 17px;
+}
+input::placeholder {
+  color: #de9043;
+  font-size: 17px;
+}
+@media (min-width: 1200px) {
+  input {
+    display: inline-block;
+    font-size: 17px;
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 1600px) {
+  input {
+    font-size: 21px;
+    margin-bottom: 30px;
+  }
+}
+/*page-form*/
+@media (min-width: 768px) {
+  .page-form {
+    max-width: 480px;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    border-radius: 15px;
+    padding: 30px 40px;
+    font-family: 'FedraSansPro Light', sans-serif;
+    width: 40%;
+    top: 30%;
+    right: 6%;
+  }
+}
+@media (min-width: 1200px) {
+  .page-form {
+    top: 23%;
+    width: 35%;
+  }
+}
+@media (min-width: 1400px) {
+  .page-form {
+    top: 41%;
+    width: 40%;
+  }
+}
+@media (min-width: 1600px) {
+  .page-form {
+    width: 40%;
+    top: 50%;
+    right: 6%;
+    padding: 40px 60px;
+  }
+}
+.page-form p {
+  font-size: 33px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+@media (min-width: 1200px) {
+  .page-form p {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 1600px) {
+  .page-form p {
+    font-size: 33px;
+    line-height: 33px;
+  }
+}
+/*кнопка формы*/
+.page-form input[type="submit"] {
+  width: 100%;
+  height: 55px;
+  background-color: #ff6e1a;
+  text-align: center;
+  color: #fff;
+  font-size: 17px;
+  border-bottom: none;
+}
+.page-form input[type="submit"]:hover {
+  color: #cccccc;
+  background-color: transparent;
+  height: 55px;
+  border: 2px solid #ff6e1a;
+}
+.page-form input[type="submit"]:active {
+  color: #cccccc;
+  background-color: #ff6e1a;
+  height: 55px;
+  border: 0px solid #ff6e1a;
+}
+.page-form #contact-form input[type="checkbox"] {
+  display: inline-block;
+  text-align: left;
+}
+.header-mini__rev {
+  width: 250px;
+  position: absolute;
+  left: 0;
+  bottom: 7%;
+}
+@media (min-width: 1500px) {
+  .header-mini__rev {
+    left: -65px;
+  }
+}
+.header-mini__rev ul li a {
+  width: 60px;
+  margin-right: 10px;
+}
+.header-mini__rev .nav-pills > li > a:hover,
+.header-mini__rev .nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background-color: transparent;
+  width: 60px;
+  border-radius: 50%;
+}
+.header-mini__rev img {
+  width: 60px;
+}
+.header-mini__rev p {
+  font-family: 'FedraSansPro Light', sans-serif;
+  font-size: 15px;
+  line-height: 15px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+header {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  padding: 35px;
+  background-color: #777;
+  color: #fff;
+  background: url('../img/bg/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /*&::before {
+        position: absolute;
+        content:"";
+        background-color: rgba(0,0,0, .5);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }*/
+}
+.top-panel {
+  width: 100%;
+}
+.logo {
+  float: left;
+  width: 130px;
+  margin-left: -20px;
+}
+@media (min-width: 480px) {
+  .logo {
+    margin-left: 0px;
+  }
+}
+@media (min-width: 768px) {
+  .logo {
+    width: 110px;
+  }
+}
+@media (min-width: 992px) {
+  .logo {
+    width: 150px;
+  }
+}
+@media (min-width: 1200px) {
+  .logo {
+    width: 216px;
+  }
+}
+/*контакты в топ-панели*/
+.top-panel__contact {
+  float: right;
+  margin-top: -10px;
+}
+@media (min-width: 1200px) {
+  .top-panel__contact {
+    padding-top: 10px;
+  }
+}
+.top-panel__contact .contact-item {
+  font-family: 'FedraSansPro Demi', sans-serif;
+  margin-bottom: 6px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+@media (min-width: 768px) {
+  .top-panel__contact .contact-item a,
+  .top-panel__contact .contact-item span {
+    font-size: 11px;
+    margin-left: 25px;
+  }
+}
+@media (min-width: 992px) {
+  .top-panel__contact .contact-item a,
+  .top-panel__contact .contact-item span {
+    font-size: 15px;
+    margin-left: 30px;
+    margin-bottom: 8px;
+  }
+}
+@media (min-width: 1200px) {
+  .top-panel__contact .contact-item a,
+  .top-panel__contact .contact-item span {
+    font-size: 17px;
+    margin-left: 35px;
+    margin-bottom: 10px;
+  }
+}
+.contact-item.item-phone {
+  background-image: url("../img/icons/phone.png");
+}
+.contact-item.item-clock {
+  background-image: url("../img/icons/time.png");
+}
+.contact-item.item-mail {
+  background-image: url("../img/icons/mail.png");
+}
+/*контакты в топ-панели*/
+/*стили для навигации*/
+.header__nav {
+  position: absolute;
+  z-index: 15;
+  top: 180px;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+}
+@media (min-width: 768px) {
+  .header__nav {
+    position: absolute;
+    z-index: 15;
+    width: 60%;
+    top: 20px;
+    left: 22%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50px;
+    padding-top: 0;
+  }
+}
+@media (min-width: 992px) {
+  .header__nav {
+    top: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .header__nav {
+    top: 30px;
+    left: 25%;
+  }
+}
+@media (min-width: 1500px) {
+  .header__nav {
+    left: 22%;
+  }
+}
+.header__menu {
+  display: none;
+  float: right;
+}
+@media (min-width: 768px) {
+  .header__menu {
+    display: block;
+  }
+}
+.header__menu a {
+  position: relative;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.header__menu a:active {
+  color: #cccccc;
+}
+@media (min-width: 768px) {
+  .header__menu a {
+    font-size: 11px;
+    padding: 6px 5px;
+  }
+}
+@media (min-width: 992px) {
+  .header__menu a {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+}
+@media (min-width: 1200px) {
+  .header__menu a {
+    font-size: 15px;
+    padding: 6px 10px;
+  }
+}
+/*class responsive for menu*/
+.header__menu.responsive {
+  display: block;
+  float: none;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgba(225, 110, 26, 0.72);
+}
+.header__menu.responsive a {
+  display: block;
+  color: #fff;
+  text-align: center;
+}
+.header__menu.responsive a:active {
+  color: #cccccc;
+}
+.header__menu a:before {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0;
+  background: #fff;
+  -webkit-transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  left: 50%;
+  bottom: 0;
+}
+@media (min-width: 768px) {
+  .header__menu a:before {
+    background: #e16e1a;
+  }
+}
+.header__menu a:after {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: #fff;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  left: 50%;
+  bottom: 0;
+}
+.header__menu a:hover:before {
+  width: 50%;
+  left: 0;
+}
+.header__menu a:hover:after {
+  width: 50%;
+}
+/* end class responsive for menu   */
+/*основной контент в шапке*/
+.header__content {
+  width: 100%;
+  height: 83vh;
+  position: relative;
+}
+.header__content h1 {
+  font-size: 24px;
+  font-family: 'FedraSansPro Bold', sans-serif;
+  width: 80%;
+  line-height: 34px;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .header__content h1 {
+    font-size: 60px;
+    line-height: 70px;
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .header__content h1 {
+    font-size: 60px;
+    line-height: 70px;
+    width: 50%;
+    margin-top: 40px;
+  }
+}
+@media (min-width: 1600px) {
+  .header__content h1 {
+    font-size: 92px;
+    line-height: 104px;
+    width: 80%;
+  }
+}
+.arrow-down {
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+/*# sourceMappingURL=main.css.map */
