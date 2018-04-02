@@ -17,6 +17,9 @@
     <![endif]-->
     <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap-theme.min.css">
+    <!-- для поэкранной прокрутки -->
+    <link rel="stylesheet" href="libs/fullPage/jquery.fullPage.css" />
+     <!-- //для поэкранной прокрутки -->
     <link rel="stylesheet" type="text/css" href="libs/animate.css">
 	
 	   <link rel="stylesheet" type="text/css" href="css/main.css">	
@@ -27,7 +30,7 @@
 </head>
 
 <body>
-	
+<div id="fullpage">
    <!-- шапка-->
 	<header>
     <div class=" section container">
@@ -144,6 +147,9 @@
         
       </div>
     </div>
+    <!--треугольник вниз-->
+        <a href="#" class="arrow-down"><img src="img/icons/arrow.png" alt=""></a>
+        <!--треугольник вниз-->
   </section>
    <!--//о нас-->
    <!--услуги-->
@@ -177,8 +183,14 @@
         </div>
       </div>
     </div>
+    <!--треугольник вниз-->
+        <a href="#" class="arrow-down"><img src="img/icons/arrow.png" alt=""></a>
+        <!--треугольник вниз-->
   </section> 
     <!--//услуги-->
+</div>
+
+
 	    <!--popup-->
     <div class="overlay_popup"></div>
      <div class="popup" id="popup1">
@@ -214,6 +226,11 @@
 
   <script src="libs/jquery/jquery-1.11.2.min.js"></script>
   <script src="libs/bootstrap/js/bootstrap.js"></script>
+  <!--для прокрутки экраном-->
+     <script src="libs/fullPage/jquery.easings.min.js"></script>
+     <script src="libs/fullPage/scrolloverflow.min.js"></script>     
+     <script src="libs/fullPage/jquery.fullPage.js"></script> 
+      <!--//для прокрутки экраном--> 
 	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
 	
 	<script src="libs/jquery.validate/jquery.validate.js"></script>

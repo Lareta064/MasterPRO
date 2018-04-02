@@ -14,6 +14,8 @@
       highlightSelector:"nav a"
     });
 
+    
+
 	//иконка бургер
 	(function() {
  
@@ -92,8 +94,6 @@ $('.overlay_popup').click(function() { // Обрабатываем клик по
   wow.init();
    new WOW().init();
 
-
-	
 
 });
 

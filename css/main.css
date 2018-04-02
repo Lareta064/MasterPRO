@@ -211,6 +211,9 @@ p.paragraf {
     line-height: 41px;
   }
 }
+.section {
+  position: relative;
+}
 .cmn-toggle-switch {
   display: block;
   position: absolute;
@@ -1015,21 +1018,25 @@ header {
 @media (min-width: 768px) {
   .aboutus {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 @media (min-width: 992px) {
   .aboutus {
     padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 @media (min-width: 1200px) {
   .aboutus {
     padding-top: 130px;
+    padding-bottom: 200px;
   }
 }
 @media (min-width: 1600px) {
   .aboutus {
     padding-top: 165px;
+    padding-bottom: 350px;
   }
 }
 .aboutus h2 {
