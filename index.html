@@ -30,7 +30,7 @@
 </head>
 
 <body>
-<div id="fullpage">
+
    <!-- шапка-->
 	<header>
     <div class=" section container">
@@ -110,7 +110,7 @@
                   <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
                 </div>
               </div>
-              <ul class="nav nav-pills">
+              <ul class="nav nav-pills" id="mini-rev">
                 <li class="active"><a data-toggle="pill" href="#mini-rev1"><img src="img/icons/rev1.png" class="img-responcive img-circle" alt=""></a></li>
                 <li><a data-toggle="pill" href="#mini-rev2"><img src="img/icons/rev2.png" class="img-responcive img-circle" alt=""></a></li>
                 <li><a data-toggle="pill" href="#mini-rev3"><img src="img/icons/rev3.png" class="img-responcive img-circle" alt=""></a></li>
@@ -122,7 +122,7 @@
 
       </div>
         <!--треугольник вниз-->
-        <a href="#" class="arrow-down"><img src="img/icons/arrow.png" alt=""></a>
+        <a href="#" class="arrow-down click"><img src="img/icons/arrow.png" alt=""></a>
   		  <!--треугольник вниз-->
 	</header>
     <!-- //шапка--> 
@@ -148,49 +148,207 @@
       </div>
     </div>
     <!--треугольник вниз-->
-        <a href="#" class="arrow-down"><img src="img/icons/arrow.png" alt=""></a>
+        <a href="#benefits" class="arrow-down"><img src="img/icons/arrow.png" alt=""></a>
         <!--треугольник вниз-->
   </section>
    <!--//о нас-->
-   <!--услуги-->
-  <section class="section service" id="service">
+   <!--преимущества-->
+  <section class="section benefits" id="benefits">
     <div class="container">
-      <h2 class="head aboutus__head">Наши услуги</h2>
-      <div class="service-block">
-        <div class="service-block__item">
+      <h2 class="head aboutus__head">Почему мы</h2>
+      <div class="benefits-block">
+        <div class="benefits-block__item">
           <img src="img/icons/serv1.png" class="img-responcive" atl="">
-          <p class="service-block__item-head">Индивидуальный подход</p>
+          <p class="benefits-block__item-head">Индивидуальный подход</p>
           <p class="basic-paragraf">Мы подходим к работеответственно, учитывая все ваши пожелания. 
               Прислушиваемся к вашему мнению и советуем как поступить в определнных ситуациях</p>
         </div>
 
-        <div class="service-block__item">
+        <div class="benefits-block__item">
           <img src="img/icons/serv2.png" class="img-responcive" atl="">
-          <p class="service-block__item-head">Квалифицированные работники</p>
+          <p class="benefits-block__item-head">Квалифицированные работники</p>
           <p class="basic-paragraf">Наши работники профессионалы своего дела. Они знают как 
             сделать  работу не только быстро,но и качественно</p>
         </div>
-        <div class="service-block__item">
+        <div class="benefits-block__item">
           <img src="img/icons/serv3.png" class="img-responcive" atl="">
-          <p class="service-block__item-head">низкие цены</p>
+          <p class="benefits-block__item-head">низкие цены</p>
           <p class="basic-paragraf">Мы предлагаем низкую цену за услуги ремонта. Также у нас действуют особые скидки</p>
         </div>
-        <div class="service-block__item">
+        <div class="benefits-block__item">
           <img src="img/icons/serv4.png" class="img-responcive" atl="">
-          <p class="service-block__item-head">Помощь</p>
+          <p class="benefits-block__item-head">Помощь</p>
           <p class="basic-paragraf">Мы не стоим в стороне.С каждого заказа мы отдаем 2% благотворительным 
             организациям</p>
         </div>
       </div>
     </div>
+    <div class="container form-wrapper">
+        <div class="contact-form2">
+          <h3>Готовы заказать уже сейчас?</h3>
+          <h5>Тогда оставьте заявку и наш менеджер свяжется с вами</h5>
+            <form id="contact-form2" action= "php/mail.php" method= "POST"> 
+                <!-- Hidden Required Fields -->
+                          <input type="hidden" name="project_name" value="Ремонт квартир">
+                          <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
+                          <input type="hidden" name="form_subject" value="Заявка на замер">
+                        <!-- END Hidden Required Fields -->
+
+                <input type="text" name="name" id="name" placeholder="ваше имя"/>
+                <input type="text" name="phone" id="phone" placeholder="ваш телефон"/>
+                <input type="hidden" name="email_from" value="info@project-onlinespb.ru">
+                <input type= "submit" value="оставить заявку">
+                <label for="terms" class="subscribe">
+                <input type="checkbox" name="terms" id="terms"/>
+                Даю согласие на обработку персональных данных</label> 
+              </form>
+        </div>
+    </div>
     <!--треугольник вниз-->
-        <a href="#" class="arrow-down"><img src="img/icons/arrow.png" alt=""></a>
-        <!--треугольник вниз-->
+    <a href="#service" class="arrow-down click"><img src="img/icons/arrow.png" alt=""></a>
+    <!--треугольник вниз-->
   </section> 
-    <!--//услуги-->
-</div>
+    <!--//преимущества-->
 
+  <!--услуги-->
+  <section class="section service" id="service">
+    <div class="container">
+      <h2 class="head service__head">Наши услуги</h2>
+      <h3>ВЫБЕРИТЕ НУЖНУЮ ДЛЯ ВАС ПОЗИЦИЮ</h3>
 
+      <div class="service__tabs">
+        <ul class="nav nav-pills" id="service-tabs">
+          <li class="active"><a data-toggle="pill" href="#item1">Пол</a></li>
+          <li><a data-toggle="pill" href="#item2">Потолок</a></li>
+          <li><a data-toggle="pill" href="#item3">Стены</a></li>
+          <li><a data-toggle="pill" href="#item4">Плиточные работы</a></li>
+          <li><a data-toggle="pill" href="#item5">Сантехнические работы</a></li>
+        </ul>
+  
+        <div class="tab-content" id="service-tab-content">
+          <div id="item1" class="tab-pane fade in active">
+            <h3>Пол</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div id="item2" class="tab-pane fade">
+            <h3>Потолок</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div id="item3" class="tab-pane fade">
+            <h3>Стены</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+          </div>
+          <div id="item4" class="tab-pane fade">
+            <h3>Плиточные работы</h3>
+            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
+          <div id="item5" class="tab-pane fade">
+            <h3>Сантехнические работы</h3>
+            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container form-wrapper">
+        <div class="contact-form2">
+          <h3>Определились с выбором?</h3>
+          <h5>Тогда оставьте заявку и мы сделаем бесплатный замер</h5>
+            <form id="contact-form2" action= "php/mail.php" method= "POST"> 
+                <!-- Hidden Required Fields -->
+                          <input type="hidden" name="project_name" value="Ремонт квартир">
+                          <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
+                          <input type="hidden" name="form_subject" value="Заявка на замер">
+                        <!-- END Hidden Required Fields -->
+
+                <input type="text" name="name" id="name" placeholder="ваше имя"/>
+                <input type="text" name="phone" id="phone" placeholder="ваш телефон"/>
+                <input type="hidden" name="email_from" value="info@project-onlinespb.ru">
+                <input type= "submit" value="оставить заявку">
+                <label for="terms" class="subscribe">
+                <input type="checkbox" name="terms" id="terms"/>
+                Даю согласие на обработку персональных данных</label> 
+              </form>
+        </div>
+    </div>
+    <!--треугольник вниз-->
+    <a href="#work" class="arrow-down click"><img src="img/icons/arrow.png" alt=""></a>
+    <!--треугольник вниз-->
+  </section>
+  <!--//услуги-->
+  <!--как мы работаем-->
+   <section class="section work" id="work">
+     <div class="container">
+        <h2 class="head service__head">Как мы работаем</h2>
+        <div class="row">
+          <!--string1-->
+          <div class="work__block">
+            <div class="work__item">
+              <img src="img/icons/w1.png" class="img-responcive" atl="">
+              <p class="benefits-block__item-head">Квалифицированные работники</p>
+              <p class="basic-paragraf">Наши работники профессионалы своего дела. Они знают как 
+               сделать  работу не только быстро,но и качественно</p>
+            </div>
+             <div class="work__item line-center">
+               <div class="line"></div>
+            </div>
+             <div class="work__item">
+              <img src="img/icons/w2.png" class="img-responcive" atl="">
+              <p class="benefits-block__item-head">Квалифицированные работники</p>
+              <p class="basic-paragraf">Наши работники профессионалы своего дела. Они знают как 
+               сделать  работу не только быстро,но и качественно</p>
+            </div>
+             <div class="work__item line-center">
+              <div class="line"></div>
+            </div>
+             <div class="work__item">
+              <img src="img/icons/w3.png" class="img-responcive" atl="">
+              <p class="benefits-block__item-head">Квалифицированные работники</p>
+              <p class="basic-paragraf">Наши работники профессионалы своего дела. Они знают как 
+               сделать  работу не только быстро,но и качественно</p>
+            </div>
+          </div>
+          <!--string2-->
+          <div class="work__block work__block-revers">
+            <div class="work__item work__item-vertical"> 
+               <div class="line-vertical"></div>
+             </div>
+          </div>
+           <!--string3-->
+          <div class="work__block">
+            <div class="work__item">
+              <img src="img/icons/w4.png" class="img-responcive" atl="">
+              <p class="benefits-block__item-head">Квалифицированные работники</p>
+              <p class="basic-paragraf">Наши работники профессионалы своего дела. Они знают как 
+               сделать  работу не только быстро,но и качественно</p>
+            </div>
+             <div class="work__item line-center">
+               <div class="line"></div>
+            </div>
+             <div class="work__item">
+              <img src="img/icons/w5.png" class="img-responcive" atl="">
+              <p class="benefits-block__item-head">Квалифицированные работники</p>
+              <p class="basic-paragraf">Наши работники профессионалы своего дела. Они знают как 
+               сделать  работу не только быстро,но и качественно</p>
+            </div>
+             <div class="work__item line-center">
+              <div class="line"></div>
+            </div>
+             <div class="work__item">
+              <img src="img/icons/w6.png" class="img-responcive" atl="">
+              <p class="benefits-block__item-head">Квалифицированные работники</p>
+              <p class="basic-paragraf">Наши работники профессионалы своего дела. Они знают как 
+               сделать  работу не только быстро,но и качественно</p>
+            </div>
+          </div>
+
+        </div>
+     </div>
+     <!--треугольник вниз-->
+    <a href="#" class="arrow-down click"><img src="img/icons/arrow.png" alt=""></a>
+    <!--треугольник вниз-->
+   </section>
+  <!--//как мы работаем-->
 	    <!--popup-->
     <div class="overlay_popup"></div>
      <div class="popup" id="popup1">

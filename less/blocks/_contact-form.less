@@ -69,27 +69,7 @@ textarea:focus {
   margin-bottom: 30px;
   color: #fff;
 }
-/*input[type="submit"] {
-  color: #fff;
-  
-  background-color: inherit;
-  display: block;
-  width: 150px;
-  float: right;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  
-  text-transform: uppercase;
-  
-}
-input[type="submit"]:hover {
-  color: rgb(153, 153, 153);
-  background-color: #3c444799;
-}
-input[type="submit"]:active {
-  color: #333;
-  background-color: rgb(204, 204, 204);
-}*/
+
 label.error {
   font-size: 12px;
   color:#fff;
@@ -214,6 +194,7 @@ input{
    }
 }
 /*кнопка формы*/
+.contact-form2 input[type="submit"], 
 .page-form input[type="submit"]{
   width: 100%;
   height: 40px;
@@ -255,4 +236,66 @@ label.subscribe {
   font-size: 10px;
   font-weight: 400;
   margin-bottom: 0;
+}
+/****contact-form2****/
+.form-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contact-form2 {
+  text-align: center;
+  
+  color: #fff;
+  font-family: 'FedraSansPro Lyght', sans-serif;
+  max-width: 650px;
+  background-color: rgba(0,0,0, .75);
+  border-radius:15px;
+   padding: 20px 30px;
+
+}
+.contact-form2 input[type="text"]{
+  width: 40%;
+  float: left;
+  padding: 0;
+}
+.contact-form2 input[name="phone"]{
+  float: right;
+}
+.contact-form2 h3{
+  
+  font-size: 24px;
+  margin-bottom: 12px;
+  text-align: center;
+   @media (min-width: 768px){
+    //font-size: 24px;
+   }
+     @media (min-width: 1200px){
+    font-size: 26px;
+   }
+    @media (min-width: 1600px){
+    font-size: 28px;
+   }
+}
+.contact-form2 h5{
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 23px;
+    @media (min-width: 992px){
+    font-size: 13px;
+   }
+    @media (min-width: 1200px){
+    font-size: 15px;
+   }
+    @media (min-width: 1600px){
+    font-size: 17px;
+   }
+}
+.contact-form2 input[type="submit"]{
+  width: 70%;
+  min-width: 270px;
+  margin-top: 23px;
+  margin-left: auto;
+  margin-right: auto;
+  
 }

@@ -14,7 +14,6 @@
       highlightSelector:"nav a"
     });
 
-    
 
 	//иконка бургер
 	(function() {
@@ -119,4 +118,14 @@ $('.overlay_popup').click(function() { // Обрабатываем клик по
       return false;
     });
   });
+});
+ /*скрипт для оранжевого треугольника*/
+ $(document).ready(function(){
+        $('.click').click(function () {
+            var win = $(window).height();
+            $('body,html').animate({
+                scrollTop: win
+            }, 800);
+            return false;
+        });
 });
