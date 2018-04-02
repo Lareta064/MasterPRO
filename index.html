@@ -30,8 +30,8 @@
 	
    <!-- шапка-->
 	<header>
-    <div class="container">
-      <div class="top-panel clearfix">
+    <div class=" section container">
+      <div class="top-panel clearfix" id="top">
       		<div class="logo">
       			<a href="index.html">
       				<img src="img/icons/logo1.png"  class="img-responsive" alt="logo">
@@ -40,10 +40,10 @@
       		<nav class="header__nav">
             <div class="header__menu" id="topnav">
       				<a href="#aboutus">О нас</a>
-      				<a href="#action">Преимущества</a>
-              <a href="#partners">Услуги</a>
-              <a href="#partners">Как мы работаем</a>
-      				<a href="#partners">Отзывы</a>
+      				<a href="#benefits">Преимущества</a>
+              <a href="#service">Услуги</a>
+              <a href="#work">Как мы работаем</a>
+      				<a href="#reviews">Отзывы</a>
       				<a href="#contacts">Контакты</a>
             </div>            
       		</nav>
@@ -62,7 +62,7 @@
         <div class="container">
            <div class="header__content">
              
-               <h1>с нами ремонт не будет проблемой</h1>
+               <h1>с нами ремонт<br> не будет<br> проблемой</h1>
             
              <div class="page-form header__content-form">
                
@@ -77,10 +77,22 @@
                   <input type="text" name="phone" id="phone" placeholder="ваш телефон"/>
                   <input type="hidden" name="email_from" value="info@project-onlinespb.ru">
                   <input type= "submit" value="оставить заявку">
+                  <label for="terms" class="subscribe">
                   <input type="checkbox" name="terms" id="terms"/>
-                  <label for="terms" class="subscribe">Даю согласие на обработку персональных данных</label> 
+                  Даю согласие на обработку персональных данных</label> 
                 </form>
              </div>
+             <!--orange menu-->
+             <div class="line-menu hidden-xs">
+               <div class="line-menu__item"><a href="#top"><span class="glyphicon glyphicon-minus"></span></a></div>               
+               <div class="line-menu__item"><a href="#aboutus"><span class="glyphicon glyphicon-minus"></span></a></div>               
+               <div class="line-menu__item"><a href="#service"><span class="glyphicon glyphicon-minus"></span></a></div>               
+               <div class="line-menu__item"><a href="#benefits"><span class="glyphicon glyphicon-minus"></span></a></div>               
+               <div class="line-menu__item"><a href="#work"><span class="glyphicon glyphicon-minus"></span></a></div>               
+               <div class="line-menu__item"><a href="#reviews"><span class="glyphicon glyphicon-minus"></span></a></div> 
+               <div class="line-menu__item"><a href="#contacts"><span class="glyphicon glyphicon-minus"></span></a></div>
+             </div>
+             <!--orange menu-->
            
            <!--вкладка отзывы в шапке-->
             <div class="header-mini__rev">
@@ -110,13 +122,63 @@
         <a href="#" class="arrow-down"><img src="img/icons/arrow.png" alt=""></a>
   		  <!--треугольник вниз-->
 	</header>
-  
-     <!-- //шапка--> 
+    <!-- //шапка--> 
 
-      
-      <!--кнопка скроллинга вверх-->
-      <p id="back-top"><a href="#top"><span class="glyphicon glyphicon-chevron-up"></span></a></p>
-      <!--кнопка скроллинга вверх-->
+   <!--о нас-->
+  <section class="section aboutus" id="aboutus">
+    <div class="container">
+      <div class="aboutus__text">
+        <h2 class="head aboutus__head">НЕМНОГО О НАС</h2>
+        <p class="paragraf">
+          MasterPRO -  молодая перспективная компания, которая стремится улучшить жизнь, превратив ремонт из проблемы в простую временную задачу.
+        </p>
+        <p class="paragraf">
+          Мы существуем не так давно, но у нас уже есть успешные проекты. В нашей команде работают профессионалы своего дела. 
+        </p>
+        <p class="paragraf">
+          С каждым выполненным проектом мы становимся сильнее,а довольных клиентов становится все больше. 
+        </p>
+        <p class="paragraf">
+          На этом наши добрые дела не заканчиваются, мы всегда готовы ответить на интересующие вас вопросы, а часть средств от ремонта мы жертвуем благотворительным организациям. 
+        </p>
+        
+      </div>
+    </div>
+  </section>
+   <!--//о нас-->
+   <!--услуги-->
+  <section class="section service" id="service">
+    <div class="container">
+      <h2 class="head aboutus__head">Наши услуги</h2>
+      <div class="service-block">
+        <div class="service-block__item">
+          <img src="img/icons/serv1.png" class="img-responcive" atl="">
+          <p class="service-block__item-head">Индивидуальный подход</p>
+          <p class="basic-paragraf">Мы подходим к работеответственно, учитывая все ваши пожелания. 
+              Прислушиваемся к вашему мнению и советуем как поступить в определнных ситуациях</p>
+        </div>
+
+        <div class="service-block__item">
+          <img src="img/icons/serv2.png" class="img-responcive" atl="">
+          <p class="service-block__item-head">Квалифицированные работники</p>
+          <p class="basic-paragraf">Наши работники профессионалы своего дела. Они знают как 
+            сделать  работу не только быстро,но и качественно</p>
+        </div>
+        <div class="service-block__item">
+          <img src="img/icons/serv3.png" class="img-responcive" atl="">
+          <p class="service-block__item-head">низкие цены</p>
+          <p class="basic-paragraf">Мы предлагаем низкую цену за услуги ремонта. Также у нас действуют особые скидки</p>
+        </div>
+        <div class="service-block__item">
+          <img src="img/icons/serv4.png" class="img-responcive" atl="">
+          <p class="service-block__item-head">Помощь</p>
+          <p class="basic-paragraf">Мы не стоим в стороне.С каждого заказа мы отдаем 2% благотворительным 
+            организациям</p>
+        </div>
+      </div>
+    </div>
+  </section> 
+    <!--//услуги-->
 	    <!--popup-->
     <div class="overlay_popup"></div>
      <div class="popup" id="popup1">

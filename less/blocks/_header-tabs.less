@@ -1,8 +1,16 @@
 .header-mini__rev {
+	display: none;
+	@media (min-width: 768px){
+		display: block;
 	width: 250px;
 	position: absolute;
-	left: 0;
-	bottom: 7%;
+	left: -15px;
+	bottom: 30px;
+		left: 0;}
+		
+	@media (min-width: 992px){
+		bottom: 12%;
+	}
 	@media (min-width: 1500px){
 		left: -65px;
 	}
@@ -24,8 +32,19 @@
 }
 .header-mini__rev p{
 	font-family: 'FedraSansPro Light', sans-serif;
-	font-size: 15px;
+	font-size: 13px;
 	line-height: 15px;
 	color: #fff;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
+
+	@media (min-width: 768px){
+		margin-bottom: 10px;
+	}
+	@media (min-width: 992px){
+		margin-bottom: 15px;
+	}
+	@media (min-width: 1200px){
+		margin-bottom: 25px;
+		font-size: 15px;
+	}
 }
