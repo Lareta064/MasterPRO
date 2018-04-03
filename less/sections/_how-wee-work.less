@@ -8,12 +8,17 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @media (min-width: 768px){
+     	padding-top: 60px
+     }
     @media (min-width: 1500px){
      	padding-top: 90px
      }
 }
-.work h2 {
+.footer__head,
+.work__head {
 	margin-bottom: 70px;
+	color: #000;
 }
 .work__block {
 	width: 90%;
@@ -21,7 +26,10 @@
 	justify-content: space-between;
 	margin-bottom: 50px;
      @media (min-width: 992px){
-     	width: 100%;
+     	width: 96%;
+     }
+      @media (min-width: 1400px){
+     	width: 98%;
      }
 }
 .work__item {
@@ -32,6 +40,13 @@
 		margin-right: auto;
 		display: inline-block;
 		margin-bottom: 25px;
+		@media (min-width: 768px){
+     	width: 90px;
+     }
+     @media (min-width: 992px){
+     	width: 100px;
+     }
+     
 		@media (min-width: 1500px){
 		width: 145px;}
 	}

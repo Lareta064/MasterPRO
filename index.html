@@ -17,6 +17,8 @@
     <![endif]-->
     <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="libs/owl.carousel/owl.carousel.css">
+    <link rel="stylesheet" href="libs/owl.carousel/owl.theme.default.css">
     <!-- для поэкранной прокрутки -->
     <link rel="stylesheet" href="libs/block-scroll-master/css/blockScroll.css" />
      <!-- //для поэкранной прокрутки -->
@@ -33,101 +35,102 @@
   <div id="main-wrap">
    <!-- шапка-->
    <div>
-	<header>
-    <div class=" section container">
-      <div class="top-panel clearfix" id="top">
-      		<div class="logo">
-      			<a href="index.html">
-      				<img src="img/icons/logo1.png"  class="img-responsive" alt="logo">
-      			</a>
-      		</div>	
-      		<nav class="header__nav">
-            <div class="header__menu" id="topnav">
-      				<a href="#aboutus">О нас</a>
-      				<a href="#benefits">Преимущества</a>
-              <a href="#service">Услуги</a>
-              <a href="#work">Как мы работаем</a>
-      				<a href="#reviews">Отзывы</a>
-      				<a href="#contacts">Контакты</a>
-            </div>            
-      		</nav>
-          <div class="top-panel__contact hidden-xs">
-                  <div class="contact-item item-phone"><a href="tel:+79535127770">8 953 512 777 0</a></div>
-                  <div class="contact-item item-clock"><span>9:00 - 18:00</span></div>
-                  <div class="contact-item item-mail"><a href="step411@mail.ru"></a></div>
-          </div>
-      </div> 
-    </div>     
-  		<!--Иконка навигации для маленьких экранов-->
-        <button id="navigation__button" class="cmn-toggle-switch cmn-toggle-switch__htx">
-            <span>toggle menu</span>
-        </button>
-        <!-- основной контент в шапке-->
+    	<header>
         <div class="container">
-           <div class="header__content">
-             
-               <h1>с нами ремонт<br> не будет<br> проблемой</h1>
-            
-             <div class="page-form header__content-form">
-               
-                         <p>Оставьте заявку на бесплатный замер</p>
-                <form id="contact-form" action= "php/mail.php" method= "POST"> 
-                  <!-- Hidden Required Fields -->
-                            <input type="hidden" name="project_name" value="Ремонт квартир">
-                            <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
-                            <input type="hidden" name="form_subject" value="Заявка на замер">
-                          <!-- END Hidden Required Fields -->
-                  <input type="text" name="name" id="name" placeholder="ваше имя"/>
-                  <input type="text" name="phone" id="phone" placeholder="ваш телефон"/>
-                  <input type="hidden" name="email_from" value="info@project-onlinespb.ru">
-                  <input type= "submit" value="оставить заявку">
-                  <label for="terms" class="subscribe">
-                  <input type="checkbox" name="terms" id="terms"/>
-                  Даю согласие на обработку персональных данных</label> 
-                </form>
-             </div>
-             <!--orange menu-->
-             <div class="line-menu hidden-xs">
-               <div class="line-menu__item"><a href="#top"><span class="glyphicon glyphicon-minus"></span></a></div>               
-               <div class="line-menu__item"><a href="#aboutus"><span class="glyphicon glyphicon-minus"></span></a></div>               
-               <div class="line-menu__item"><a href="#service"><span class="glyphicon glyphicon-minus"></span></a></div>               
-               <div class="line-menu__item"><a href="#benefits"><span class="glyphicon glyphicon-minus"></span></a></div>               
-               <div class="line-menu__item"><a href="#work"><span class="glyphicon glyphicon-minus"></span></a></div>               
-               <div class="line-menu__item"><a href="#reviews"><span class="glyphicon glyphicon-minus"></span></a></div> 
-               <div class="line-menu__item"><a href="#contacts"><span class="glyphicon glyphicon-minus"></span></a></div>
-             </div>
-             <!--orange menu-->
-           
-           <!--вкладка отзывы в шапке-->
-            <div class="header-mini__rev">
-              <div class="tab-content">
-                <div id="mini-rev1" class="tab-pane fade in active">
-                  <p>Обычно отделочные фирмы очень дорогие, но тут  вышло очень бюджетно, рекомендую!</p>
-                </div>
-                <div id="mini-rev2" class="tab-pane fade">
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                </div>
-                <div id="mini-rev3" class="tab-pane fade">
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
-                </div>
-              </div>
-              <ul class="nav nav-pills" id="mini-rev">
-                <li class="active"><a data-toggle="pill" href="#mini-rev1"><img src="img/icons/rev1.png" class="img-responcive img-circle" alt=""></a></li>
-                <li><a data-toggle="pill" href="#mini-rev2"><img src="img/icons/rev2.png" class="img-responcive img-circle" alt=""></a></li>
-                <li><a data-toggle="pill" href="#mini-rev3"><img src="img/icons/rev3.png" class="img-responcive img-circle" alt=""></a></li>
-                
-              </ul>
-          </div>
-           <!--//вкладка отзывы в шапке-->
-         </div>
 
-      </div>
-        <!--треугольник вниз-->
-        <a href="#" class="arrow-down click"><img src="img/icons/arrow.png" alt=""></a>
-  		  <!--треугольник вниз-->
-	</header>
+          <div class="top-panel" id="top">
+          		<div class="logo">
+          			<a href="index.html">
+          				<img src="img/icons/logo1.png"  class="img-responsive" alt="logo">
+          			</a>
+          		</div>	
+          		<nav class="header__nav">
+                <div class="header__menu" id="topnav">
+          				<a href="#aboutus">О нас</a>
+          				<a href="#benefits">Преимущества</a>
+                  <a href="#service">Услуги</a>
+                  <a href="#work">Как мы работаем</a>
+          				<a href="#reviews">Отзывы</a>
+          				<a href="#footer">Контакты</a>
+                </div>            
+          		</nav>
+              <div class="top-panel__contact hidden-xs">
+                      <div class="contact-item item-phone"><a href="tel:+79535127770">8 953 512 777 0</a></div>
+                      <div class="contact-item item-clock"><span>9:00 - 18:00</span></div>
+                      <div class="contact-item item-mail"><a href="step411@mail.ru"></a></div>
+              </div>
+          </div> 
+        </div>     
+      		<!--Иконка навигации для маленьких экранов-->
+            <button id="navigation__button" class="cmn-toggle-switch cmn-toggle-switch__htx">
+                <span>toggle menu</span>
+            </button>
+            <!-- основной контент в шапке-->
+            <div class="container">
+               <div class="header__content">
+                 
+                   <h1>с нами ремонт<br> не будет<br> проблемой</h1>
+                
+                 <div class="page-form header__content-form">
+                   
+                             <p>Оставьте заявку на бесплатный замер</p>
+                    <form id="contact-form" action= "php/mail.php" method= "POST"> 
+                      <!-- Hidden Required Fields -->
+                                <input type="hidden" name="project_name" value="Ремонт квартир">
+                                <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
+                                <input type="hidden" name="form_subject" value="Заявка на замер">
+                              <!-- END Hidden Required Fields -->
+                      <input type="text" name="name" id="name" placeholder="ваше имя"/>
+                      <input type="text" name="phone" id="phone" placeholder="ваш телефон"/>
+                      <input type="hidden" name="email_from" value="info@project-onlinespb.ru">
+                      <input type= "submit" value="оставить заявку">
+                      <label for="terms" class="subscribe">
+                      <input type="checkbox" name="terms" id="terms"/>
+                      Даю согласие на обработку персональных данных</label> 
+                    </form>
+                 </div>
+                 <!--orange menu-->
+                 <div class="line-menu hidden-xs">
+                   <div class="line-menu__item"><a href="#top"><span class="glyphicon glyphicon-minus"></span></a></div>               
+                   <div class="line-menu__item"><a href="#aboutus"><span class="glyphicon glyphicon-minus"></span></a></div>               
+                   <div class="line-menu__item"><a href="#service"><span class="glyphicon glyphicon-minus"></span></a></div>               
+                   <div class="line-menu__item"><a href="#benefits"><span class="glyphicon glyphicon-minus"></span></a></div>               
+                   <div class="line-menu__item"><a href="#work"><span class="glyphicon glyphicon-minus"></span></a></div>               
+                   <div class="line-menu__item"><a href="#reviews"><span class="glyphicon glyphicon-minus"></span></a></div> 
+                   <div class="line-menu__item"><a href="#footer"><span class="glyphicon glyphicon-minus"></span></a></div>
+                 </div>
+                 <!--orange menu-->
+               
+               <!--вкладка отзывы в шапке-->
+                <div class="header-mini__rev">
+                  <div class="tab-content">
+                    <div id="mini-rev1" class="tab-pane fade in active">
+                      <p>Обычно отделочные фирмы очень дорогие, но тут  вышло очень бюджетно, рекомендую!</p>
+                    </div>
+                    <div id="mini-rev2" class="tab-pane fade">
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                    </div>
+                    <div id="mini-rev3" class="tab-pane fade">
+                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
+                    </div>
+                  </div>
+                  <ul class="nav nav-pills" id="mini-rev">
+                    <li class="active"><a data-toggle="pill" href="#mini-rev1"><img src="img/icons/rev1.png" class="img-responcive img-circle" alt=""></a></li>
+                    <li><a data-toggle="pill" href="#mini-rev2"><img src="img/icons/rev2.png" class="img-responcive img-circle" alt=""></a></li>
+                    <li><a data-toggle="pill" href="#mini-rev3"><img src="img/icons/rev3.png" class="img-responcive img-circle" alt=""></a></li>
+                    
+                  </ul>
+              </div>
+               <!--//вкладка отзывы в шапке-->
+             </div>
+
+          </div>
+            <!--треугольник вниз-->
+            <a href="#" class="arrow-down click"><img src="img/icons/arrow.png" alt=""></a>
+      		  <!--треугольник вниз-->
+    	</header>
     <!-- //шапка--> 
-  </div>
+   </div>
 
   <div>
    <!--о нас-->
@@ -210,7 +213,7 @@
         </div>
     </div>
     <!--треугольник вниз-->
-    <a href="#service" class="arrow-down click"><img src="img/icons/arrow.png" alt=""></a>
+    <a href="#service" class="arrow-down"><img src="img/icons/arrow.png" alt=""></a>
     <!--треугольник вниз-->
   </section> 
     <!--//преимущества-->
@@ -220,7 +223,7 @@
   <section class="section service" id="service">
     <div class="container">
       <h2 class="head service__head">Наши услуги</h2>
-      <h3>ВЫБЕРИТЕ НУЖНУЮ ДЛЯ ВАС ПОЗИЦИЮ</h3>
+      <h4>ВЫБЕРИТЕ НУЖНУЮ ДЛЯ ВАС ПОЗИЦИЮ</h4>
 
       <div class="service__tabs">
         <ul class="nav nav-pills" id="service-tabs">
@@ -249,20 +252,57 @@
             </ol>
           </div>
           <div id="item2" class="tab-pane fade">
-            <h3>Потолок</h3>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <ol>
+              <li>Натяжной потолок /<span> от 400 р. кв.м.</span></li>
+              <li>Багет /<span> 90 р. пог.м.</span></li>
+              <li>Углы /<span> 4 бесплатно, остальные 180 р.</span></li>
+              <li>Трубы /<span> 100 р. шт.</span></li>
+              <li>Подводка кабеля, установка светильников /<span> от 350 р.</span></li>
+              <li>Покраска (1 слой) /<span> от 130 р. кв.м.</span></li>
+              <li>Обои /<span> от 200 р. кв.м.</span></li>
+              <li>Плинтус /<span> 90 р. пог.м.</span></li>
+            </ol>
+            
           </div>
           <div id="item3" class="tab-pane fade">
-            <h3>Стены</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            
+            <ol>
+              <li>Визуальное выравнивание стен / от 300 р. кв.м.</span></li>
+              <li>Выравнивание стен смесью до 3см. по маякам / от 450 р. кв.м.</span></li>
+              <li>Грунтовка стен /<span> от 30 р. кв.м.</span></li>
+              <li>Штробление стен под проводку /<span> от 230 р. пог.м</span></li>
+              <li>Прокладка кабеля под проводку /<span> от 230 р. пог.м.</span></li>
+              <li>Прокладка кабеля в штробе /<span> от 60р. пог.м.</span></li>
+              <li>Штробление гнезда для подразетника  или распределительной коробки /<span> от 250 р.шт.</span></li>
+              <li>Монтаж подразетника или распределительной коробки /<span> 150 р.шт.</span></li>
+              <li>Подключение и установка розетки /<span> от 150 р.шт.</span></li>
+              <li>Снятие старых обоев /<span> от 150 р.шт.</span></li>
+              <li>Обглейка стен с подбором рисунка /<span> от 200 р. кв.м.</span></li>
+              <li>Обклейка стен без подбора рисунка /<span> от 170 р. кв.м.</span></li>
+              <li>Обклейка стен обоями под покраску /<span> от 160 р. кв.м.</span></li>
+              <li>Покраска стен (1 слой) /<span> от 160 р. кв.м. </span></li>
+            </ol>
           </div>
           <div id="item4" class="tab-pane fade">
-            <h3>Плиточные работы</h3>
-            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            <ol>
+              <li>Монтаж плитки на пол /<span> от 750 р. кв.м.</span></li>
+              <li>Монтаж плитки на стену /<span> от 900 р. кв.м.</span></li>
+              <li>Монтаж плитки по индивидуальной раскладке /<span> цена договорная</span></li>
+              <li>Монтаж мозайки на пол /<span> от 1200 р. кв.м</span></li>
+              <li>Монтаж мозайки на стены /<span> от 1200 р. кв.м.</span></li>
+             </ol> 
           </div>
           <div id="item5" class="tab-pane fade">
-            <h3>Сантехнические работы</h3>
-            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            <ol>
+              <li>Монтаж радиатора /<span> от 2000 р.</span></li>
+              <li>Монтаж полотенцесушителя /<span> от 2000 р.</span></li>
+              <li>Установка счетчиков на воду ( 2 шт) /<span>  1500 р.</span></li>
+              <li>Разводки водяные и канализационные /<span> цена договорная</span></li>
+              <li>Установка ванной /<span> от 2000 р.</span></li>
+              <li>Установка унитаза /<span> от 1300 р.</span></li>
+              <li>Становка тумбы, умывальника /<span> от 1500 р.</span></li>
+              <li>Установка душевой кабины /<span> цена договорная</span></li>
+             </ol> 
           </div>
         </div>
       </div>
@@ -290,16 +330,17 @@
         </div>
     </div>
     <!--треугольник вниз-->
-    <a href="#work" class="arrow-down click"><img src="img/icons/arrow.png" alt=""></a>
+    <a href="#work" class="arrow-down"><img src="img/icons/arrow.png" alt=""></a>
     <!--треугольник вниз-->
   </section>
   <!--//услуги-->
 </div>
+
 <div>
   <!--как мы работаем-->
    <section class="section work" id="work">
      <div class="container">
-        <h2 class="head service__head">Как мы работаем</h2>
+        <h2 class="head work__head">Как мы работаем</h2>
         <div class="row">
           <!--string1-->
           <div class="work__block">
@@ -365,11 +406,210 @@
         </div>
      </div>
      <!--треугольник вниз-->
-    <a href="#" class="arrow-down click"><img src="img/icons/arrow.png" alt=""></a>
+    <a href="#special" class="arrow-down"><img src="img/icons/arrow.png" alt=""></a>
     <!--треугольник вниз-->
    </section>
   <!--//как мы работаем-->
 </div>
+ <!--спец условия-->
+<div>
+  <section class="special" id="special">
+    <div class="container">
+       <h2 class="head service__head">наши специальные условия</h2>
+       <h4>ремонт под ключ</h4>
+       <div class="special-block">
+         <div class="special-block__item">
+           <div class="special-block__item-head">Эконом</div>
+           <div class="special-block__item-img"><img src="img/bg/ekonom.png" alt="" class="img-responsive"></div>
+           <div class="special-block__item-price">от 1500 руб кв м</div>
+         </div>
+          <div class="special-block__item">
+           <div class="special-block__item-head">Стандарт</div>
+           <div class="special-block__item-img"><img src="img/bg/standart.png" alt="" class="img-responsive"></div>
+           <div class="special-block__item-price">от 2500 руб кв м</div>
+         </div>
+          <div class="special-block__item">
+           <div class="special-block__item-head">Люкс</div>
+           <div class="special-block__item-img"><img src="img/bg/lux.png" alt="" class="img-responsive"></div>
+           <div class="special-block__item-price">от 4500 руб кв м</div>
+         </div>
+       </div>
+    
+    <div class="container form-wrapper">
+        <div class="contact-form2">
+          <h3>Готовы заказать уже сейчас?</h3>
+          <h5>Тогда оставьте заявку и наш менеджер свяжется с вами</h5>
+            <form id="contact-form2" action= "php/mail.php" method= "POST"> 
+                <!-- Hidden Required Fields -->
+                          <input type="hidden" name="project_name" value="Ремонт квартир">
+                          <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
+                          <input type="hidden" name="form_subject" value="Заявка на замер">
+                        <!-- END Hidden Required Fields -->
+
+                <input type="text" name="name" id="name" placeholder="ваше имя"/>
+                <input type="text" name="phone" id="phone" placeholder="ваш телефон"/>
+                <input type="hidden" name="email_from" value="info@project-onlinespb.ru">
+                <input type= "submit" value="оставить заявку">
+                <label for="terms" class="subscribe">
+                <input type="checkbox" name="terms" id="terms"/>
+                Даю согласие на обработку персональных данных</label> 
+              </form>
+        </div>
+       </div>
+     </div>  
+    <!--треугольник вниз-->
+    <a href="#reviews" class="arrow-down"><img src="img/icons/arrow.png" alt=""></a>
+    <!--треугольник вниз-->
+  </section>
+</div>
+ <!--//спец условия-->
+  <!--отзывы-->
+<div>
+  <section class="section reviews" id="reviews">
+    <div class="container">
+       <h2 class="head reviews__head">отзывы</h2>
+       <div class="reviews-slider">
+            <div class="owl-carousel owl-theme" id="reviews-owl">
+              
+              <div class="owl-rev-item">
+                  <div class="block">
+                    <i class="fas fa-quote-right"></i>
+                    <i class="fas fa-quote-left"></i>
+                      <div class="slider-rev-img"> 
+                        <img src="img/icons/otziv-1.png" class="img-responsive" alt="">
+                      </div>  
+                      <p class="basic-paragraf">Было не просто определиться
+                          с компанией, которая смогла  бы
+                          в короткие сроки осуществить 
+                          наши планы. MasterPRO не только 
+                          помогли с ремонтом, но и 
+                          подсказали как улучшить 
+                          задуманное. Мы с семьёй
+                          остались довольны результатом!</p>
+                    </div> 
+                </div>
+                <div class="owl-rev-item">
+                  <div class="block">
+                    <i class="fas fa-quote-right"></i>
+                    <i class="fas fa-quote-left"></i>
+                      <div class="slider-rev-img"> 
+                        <img src="img/icons/otziv-4.png" class="img-responsive" alt="">
+                      </div>  
+                      <p class="basic-paragraf">Мне понадобился ремонт кухни.
+                            Всего одна неделя и в итоге 
+                            я был очень доволен 
+                            выполенной работой.</p>
+                    </div> 
+                </div> 
+                <div class="owl-rev-item">
+                  <div class="block">
+                    <i class="fas fa-quote-right"></i>
+                    <i class="fas fa-quote-left"></i>
+                      <div class="slider-rev-img"> 
+                        <img src="img/icons/otziv-2.png" class="img-responsive" alt="">
+                      </div>  
+                      <p class="basic-paragraf">Мне понадобился ремонт кухни.
+                            Всего одна неделя и в итоге 
+                            я был очень доволен 
+                            выполенной работой.</p>
+                    </div> 
+                </div>  
+                <div class="owl-rev-item">
+                  <div class="block">
+                    <i class="fas fa-quote-right"></i>
+                    <i class="fas fa-quote-left"></i>
+                      <div class="slider-rev-img"> 
+                        <img src="img/icons/otziv-3.png" class="img-responsive" alt="">
+                      </div>  
+                      <p class="basic-paragraf">Мне понадобился ремонт кухни.
+                            Всего одна неделя и в итоге 
+                            я был очень доволен 
+                            выполенной работой.</p>
+                    </div> 
+                </div>  
+                <div class="owl-rev-item">
+                  <div class="block">
+                    <i class="fas fa-quote-right"></i>
+                    <i class="fas fa-quote-left"></i>
+                      <div class="slider-rev-img"> 
+                        <img src="img/icons/rev1.png" class="img-responsive" alt="">
+                      </div>  
+                      <p class="basic-paragraf">Мне понадобился ремонт кухни.
+                            Всего одна неделя и в итоге 
+                            я был очень доволен 
+                            выполенной работой.</p>
+                    </div> 
+                </div>  
+                <div class="owl-rev-item">
+                  <div class="block">
+                    <i class="fas fa-quote-right"></i>
+                    <i class="fas fa-quote-left"></i>
+                      <div class="slider-rev-img"> 
+                        <img src="img/icons/rev2.png" class="img-responsive" alt="">
+                      </div>  
+                      <p class="basic-paragraf">Мне понадобился ремонт кухни.
+                            Всего одна неделя и в итоге 
+                            я был очень доволен 
+                            выполенной работой.</p>
+                    </div> 
+                </div>   
+                <div class="owl-rev-item">
+                  <div class="block">
+                    <i class="fas fa-quote-right"></i>
+                    <i class="fas fa-quote-left"></i>
+                      <div class="slider-rev-img"> 
+                        <img src="img/icons/rev3.png" class="img-responsive" alt="">
+                      </div>  
+                      <p class="basic-paragraf">Мне понадобился ремонт кухни.
+                            Всего одна неделя и в итоге 
+                            я был очень доволен 
+                            выполенной работой.</p>
+                    </div> 
+                </div>       
+                  
+             </div>
+       </div>
+    </div>
+    <!--треугольник вниз-->
+    <a href="#footer" class="arrow-down"><img src="img/icons/arrow.png" alt=""></a>
+    <!--треугольник вниз-->
+  </section>
+</div>
+ <!--отзывы-->
+
+<div>
+  <section class="footer" id="footer">
+    <div class="container">
+      <h2 class="head footer__head">у вас остались вопросы?</h2>
+      <h4>или хотите заказать бесплатный замер</h4>
+         <div class="container form-wrapper">
+        <div class="contact-form2" id="footer-form">
+          <h3>Тогда оставьте заявку</h3>
+          <h3>и наш менеджер свяжется с Вами</h3>
+            <form id="contact-form2" action= "php/mail.php" method= "POST"> 
+                <!-- Hidden Required Fields -->
+                          <input type="hidden" name="project_name" value="Ремонт квартир">
+                          <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
+                          <input type="hidden" name="form_subject" value="Заявка на замер">
+                        <!-- END Hidden Required Fields -->
+
+                <input type="text" name="name" id="name" placeholder="ваше имя"/>
+                <input type="text" name="phone" id="phone" placeholder="ваш телефон"/>
+                <input type="hidden" name="email_from" value="info@project-onlinespb.ru">
+                <input type= "submit" value="оставить заявку">
+                <label for="terms" class="subscribe">
+                <input type="checkbox" name="terms" id="terms"/>
+                Даю согласие на обработку персональных данных</label> 
+              </form>
+        </div>
+    </div>
+
+    </div>
+  </section>
+</div>
+
+
+
   </div>
 	    <!--popup-->
     <div class="overlay_popup"></div>
@@ -408,9 +648,9 @@
   <script src="libs/bootstrap/js/bootstrap.js"></script>
   <!--для прокрутки экраном-->
      <script src="libs/block-scroll-master/js/blockScroll.js"></script>
-     
       <!--//для прокрутки экраном--> 
 	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+  <script src="libs/owl.carousel/owl.carousel.min.js"></script>
 	
 	<script src="libs/jquery.validate/jquery.validate.js"></script>
 	<script src="libs/jquery.maskedinput.js"></script>

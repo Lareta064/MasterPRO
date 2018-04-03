@@ -11,9 +11,12 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
+   
   }
+header .container {
+    width: auto;
 
+}
 .top-panel {
     width: 100%;
 }
@@ -100,7 +103,7 @@ header{
         position: absolute;
         z-index: 15;
          width: 60%;
-        top: 0px;
+        top: 20px;
         left: 22%;
 
         display: flex;
@@ -216,6 +219,19 @@ header{
     width: 100%;
     height: 83vh;
     position: relative;
+        @media (min-width: 768px){
+       margin-top: 80px;
+    }
+      @media (min-width: 992px){
+       margin-top: 80px;
+    }
+     @media (min-width: 1200px){
+       margin-top: 80px;
+    }
+      @media (min-width: 1400px){
+        margin-top: 150px;
+    }
+
 }
 .header__content h1  {
     

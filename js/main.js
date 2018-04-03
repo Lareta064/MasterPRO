@@ -82,7 +82,24 @@ $('.overlay_popup').click(function() { // Обрабатываем клик по
 //открываем поп 
 
 /************************/
- 
+ $('#reviews-owl').owlCarousel({
+          margin:50,
+          loop:true,
+          dots: false,
+          autoplay:true,
+          nav: true, // навигация
+         // Перепишем текст кнопок
+          // используем Font Awesome для добавления стрелок
+          navText: ['<i class="fas fa-caret-left"></i>',
+             '<i class="fas fa-caret-right"></i>'],
+          smartSpeed:2000, 
+                autoplayTimeout:3000, 
+          responsive:{
+            0:{items:1},
+            600:{items:2},
+            1000:{items:2}
+          }
+        });
 
  /************************/
 //animated
@@ -135,9 +152,9 @@ $('.overlay_popup').click(function() { // Обрабатываем клик по
 
 
 });
-
+/**/
  $(document).ready(function() {
- $(function() {
-      var blockScroller = $("#main-wrap").blockScroll();
-  });
+   $(function() {
+        var blockScroller = $("#main-wrap").blockScroll();
+    });
 });
