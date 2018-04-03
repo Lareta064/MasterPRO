@@ -10,15 +10,23 @@ $(document).ready(function() {
   $("#contact-form").validate({
     rules: {
       name: { required: true },
-      email: { required: true, email: true },
+      //email: { required: true, email: true },
       // skype:  { required: true },
       phone:{
         required: true,
         'checkMask': true
       },
+
+      terms: {
+        required: true
+      }
       
-      message: { required: true }
+   
     },
+
+     message: { 
+        terms:{ required: "Согласие на обработку персоналных данных обязательно"} 
+      }
 
     /*messages: {
       phone: {
@@ -29,14 +37,55 @@ $(document).ready(function() {
        // required: "Пожалуйста, введите свой email",
        //email: "Email адрес должен быть в формате name@domain.com . Возможно вы ввели email с ошибкой."
     },*/
-
+    /*
     submitHandler: function(form) {
       ajaxFormSubmit();
+    }
+    */
+
+  });
+
+  $("#contact-form2").validate({
+    rules: {
+      name: { required: true },
+      //email: { required: true, email: true },
+      terms: { required: true },
+      // skype:  { required: true },
+      phone: {
+        required: true,
+        'checkMask': true,
+      }
+      
+
+    },
+
+    message: { 
+        terms:{ required: "Согласие на обработку персоналных данных обязательно"} 
     }
 
   })
 
-  // Функция AJAX запрса на сервер
+  $("#contact-form-mobile").validate({
+    rules: {
+      name: { required: true },
+      email: { required: true, email: true },
+      terms: { required: true },
+      // skype:  { required: true },
+      phone: {
+        required: true,
+        'checkMask': true,
+      }
+      
+
+    },
+
+    message: { 
+        terms:{ required: "Согласие на обработку персоналных данных обязательно"} 
+    }
+
+  })
+
+  /* Функция AJAX запрса на сервер
   function ajaxFormSubmit(){
     var string = $("#contact-form").serialize(); // Соханяем данные введенные в форму в строку. 
 
@@ -47,22 +96,25 @@ $(document).ready(function() {
       data: string, // Какие даные отправляем, в данном случае отправляем переменную string
       
       // Функция если все прошло успешно
-      success: function(html){
+     success: function(html){
         $("#contact-form").slideUp(800);
         $('#answer').html(html);
+        
         setTimeout(function() {$('#answer').hide();}, 3000);//закрываем окно благодарности
         //$('#answer').show();//добавил Русик
         setTimeout(function() {$('.overlay_popup').hide();}, 3000);
       }
     });
 
+
     // Чтобы по Submit больше ничего не выполнялось - делаем возврат false чтобы прервать цепчку срабатывания остальных функций
     return false; 
   };
+  */
    // закрываем окно, нажимая на крестик
    $('#form-close').click(function() {
      $(".overlay_popup").hide();
-      $("#popup1").hide();
+      $("#popup2").hide();
    });
       
 
