@@ -244,13 +244,18 @@ label.subscribe {
 }
 .contact-form2 {
   text-align: center;
-  width: 65%;
+  width: 100%;
   color: #fff;
   font-family: 'FedraSansPro Lyght', sans-serif;
   max-width: 650px;
   background-color: rgba(0,0,0, .75);
-  border-radius:15px;
-   padding: 10px 30px;
+  border-radius:10px;
+   padding: 10px;
+   @media (min-width: 768px){
+      width: 65%;
+      border-radius:15px;
+      padding: 10px 30px;
+   }
 
 }
 .contact-form2 input[type="text"]{
@@ -298,4 +303,22 @@ label.subscribe {
   margin-right: auto;
   margin-bottom: 5px;
   
+}
+/********************/
+div.forme-visible-mobile {
+  width: 100%;
+
+  padding-bottom: 40px;
+    padding-top: 40px;
+    height: 100vh;
+  background-color: #777;
+  background: url('../img/bg/bg6.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    & .contact-form2 {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
 }

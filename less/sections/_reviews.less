@@ -64,8 +64,10 @@ h2.reviews__head{
 }
 /*положение стрелочек слайдера*/
 .reviews-slider .owl-prev, .owl-next {
-   // position: absolute;
-    //top:40%;
+   display: none;
+    @media (min-width: 768px){
+    	display: block;    	
+    }
     background-color: inherit;
     margin-top: -10px;
     @media (min-width: 1200px){
@@ -88,7 +90,10 @@ h2.reviews__head{
     }
 }
 .reviews-slider .owl-nav [class*='owl-']{
-	color: #e16e1a;
+	display: none;
+    @media (min-width: 768px){
+    	display: block;  
+	color: #e16e1a;}
 }
 .fa-caret-left,
 .fa-caret-right {

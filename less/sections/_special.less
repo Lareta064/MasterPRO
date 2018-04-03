@@ -38,8 +38,11 @@
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    width: 30%;
+    width: 45%;
     align-items: center;
+    @media (min-width: 768px){
+         width: 30%;
+    }
 }
 .special-block__item-img {
     width: 60%;
@@ -50,7 +53,7 @@
 }
 
 .special-block__item-head {
-    width: 60%;
+    width: 90%;
     height: 40px;
     background-color: #fff;
     color: #e16e1a;
@@ -58,10 +61,24 @@
     margin-bottom: 25px;
     padding-top: 15px;
     font-size: 21px;
+     @media (min-width: 768px){
+        width: 60%;
+     }
     
 }
 .special-block__item-price{
     color: #fff;
     font-size: 15px;
     text-transform: uppercase;
+    margin-bottom: 50px;
+    @media (min-width: 768px){
+         margin-bottom: 0px;
+     }
+}
+.special h2.service__head  {
+    font-size: 24px;
+    margin-top: 0;
+    @media (min-width: 768px){
+        font-size: 30px;
+    }
 }
