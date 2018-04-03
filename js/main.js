@@ -81,6 +81,10 @@ $('.overlay_popup').click(function() { // Обрабатываем клик по
 });
 //открываем поп 
 
+/************************/
+ 
+
+ /************************/
 //animated
  wow = new WOW( {
      boxClass:     'wow',      // default
@@ -128,4 +132,12 @@ $('.overlay_popup').click(function() { // Обрабатываем клик по
             }, 800);
             return false;
         });
+
+
+});
+
+ $(document).ready(function() {
+ $(function() {
+      var blockScroller = $("#main-wrap").blockScroll();
+  });
 });

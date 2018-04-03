@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap-theme.min.css">
     <!-- для поэкранной прокрутки -->
-    <link rel="stylesheet" href="libs/fullPage/jquery.fullPage.css" />
+    <link rel="stylesheet" href="libs/block-scroll-master/css/blockScroll.css" />
      <!-- //для поэкранной прокрутки -->
     <link rel="stylesheet" type="text/css" href="libs/animate.css">
 	
@@ -30,8 +30,9 @@
 </head>
 
 <body>
-
+  <div id="main-wrap">
    <!-- шапка-->
+   <div>
 	<header>
     <div class=" section container">
       <div class="top-panel clearfix" id="top">
@@ -126,7 +127,9 @@
   		  <!--треугольник вниз-->
 	</header>
     <!-- //шапка--> 
+  </div>
 
+  <div>
    <!--о нас-->
   <section class="section aboutus" id="aboutus">
     <div class="container">
@@ -152,6 +155,8 @@
         <!--треугольник вниз-->
   </section>
    <!--//о нас-->
+ </div>
+<div>
    <!--преимущества-->
   <section class="section benefits" id="benefits">
     <div class="container">
@@ -209,7 +214,8 @@
     <!--треугольник вниз-->
   </section> 
     <!--//преимущества-->
-
+</div>
+<div>
   <!--услуги-->
   <section class="section service" id="service">
     <div class="container">
@@ -227,8 +233,20 @@
   
         <div class="tab-content" id="service-tab-content">
           <div id="item1" class="tab-pane fade in active">
-            <h3>Пол</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <ol>
+              <li>Наливной пол /<span> от 200 руб. кв.м</span></li>
+              <li>Демонтаж старого деревянного пола /<span> от 190 руб. кв.м.</span></li>
+              <li>Демонтаж линолеума /<span> от 50 р. кв.м.</span></li>
+              <li>Прокручивание старого деревянного пола /<span> от 190 р. кв.м</span></li>
+              <li>Монтаж бетонно-цементной стяжки /<span> от 280 р. кв.м</span></li>
+              <li>Укладка линолеума /<span> от 190 р. кв.м</span></li>
+              <li>Укладка ламината /<span> от 190 р. кв.м.</span></li>
+              <li>Шумоизоляция и выравнивание пола с каразитом и ГВЛ /<span> от 400 р. кв.м</span></li>
+              <li>Установка плинтуса в бетон /<span> 90 р. пог.м.</span></li>
+              <li>Установка плинтуса в гибс /<span> 70 р. пог.м.</span></li>
+              <li>Установка межкомнатных дверей /<span> от 2000 р.</span></li>
+              <li>Установка входных дверей /<span> от 3000 р.</span></li>
+            </ol>
           </div>
           <div id="item2" class="tab-pane fade">
             <h3>Потолок</h3>
@@ -276,6 +294,8 @@
     <!--треугольник вниз-->
   </section>
   <!--//услуги-->
+</div>
+<div>
   <!--как мы работаем-->
    <section class="section work" id="work">
      <div class="container">
@@ -285,7 +305,7 @@
           <div class="work__block">
             <div class="work__item">
               <img src="img/icons/w1.png" class="img-responcive" atl="">
-              <p class="benefits-block__item-head">Квалифицированные работники</p>
+              <p class="benefits-block__item-head work__item-head">Квалифицированные работники</p>
               <p class="basic-paragraf">Наши работники профессионалы своего дела. Они знают как 
                сделать  работу не только быстро,но и качественно</p>
             </div>
@@ -308,12 +328,12 @@
                сделать  работу не только быстро,но и качественно</p>
             </div>
           </div>
-          <!--string2-->
+          <!--string2
           <div class="work__block work__block-revers">
             <div class="work__item work__item-vertical"> 
                <div class="line-vertical"></div>
              </div>
-          </div>
+          </div>-->
            <!--string3-->
           <div class="work__block">
             <div class="work__item">
@@ -349,6 +369,8 @@
     <!--треугольник вниз-->
    </section>
   <!--//как мы работаем-->
+</div>
+  </div>
 	    <!--popup-->
     <div class="overlay_popup"></div>
      <div class="popup" id="popup1">
@@ -385,9 +407,8 @@
   <script src="libs/jquery/jquery-1.11.2.min.js"></script>
   <script src="libs/bootstrap/js/bootstrap.js"></script>
   <!--для прокрутки экраном-->
-     <script src="libs/fullPage/jquery.easings.min.js"></script>
-     <script src="libs/fullPage/scrolloverflow.min.js"></script>     
-     <script src="libs/fullPage/jquery.fullPage.js"></script> 
+     <script src="libs/block-scroll-master/js/blockScroll.js"></script>
+     
       <!--//для прокрутки экраном--> 
 	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
 	
