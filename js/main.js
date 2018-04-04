@@ -152,9 +152,9 @@ $('.overlay_popup').click(function() { // Обрабатываем клик по
 
 
 });
-/**/
+/*
  $(document).ready(function() {
    $(function() {
         var blockScroller = $("#main-wrap").blockScroll();
     });
-});
+});*/

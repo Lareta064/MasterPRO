@@ -96,7 +96,6 @@ textarea {
 body {
   min-width: 360px;
   font-family: 'FedraSansPro Normal', sans-serif;
-  overflow: hidden;
   min-width: 320px;
   margin: 0;
   padding: 0;
@@ -681,7 +680,7 @@ label.subscribe {
 div.forme-visible-mobile {
   width: 100%;
   padding-bottom: 40px;
-  padding-top: 40px;
+  padding-top: 100px;
   height: 100vh;
   background-color: #777;
   background: url('../img/bg/bg6.jpg');
@@ -1151,7 +1150,6 @@ header .container {
 .benefits {
   width: 100%;
   padding-top: 20px;
-  height: 100vh;
   background-color: #777;
   background: url('../img/bg/bg3.jpg');
   background-repeat: no-repeat;
@@ -1280,15 +1278,14 @@ header .container {
   float: left;
 }
 .mobile-head {
-  font-size: 12px;
-  color: red;
-  margin-bottom: 5px;
+  font-size: 14px;
+  color: #e16e1a;
+  margin-bottom: 10px;
 }
 .service {
   width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
-  height: 100vh;
   background-color: #777;
   background: url('../img/bg/bg4.jpg');
   background-repeat: no-repeat;
@@ -1453,7 +1450,6 @@ ul#service-tabs {
 }
 .work {
   width: 100%;
-  height: 100vh;
   background-color: #777;
   background: url('../img/bg/bg5.jpg');
   background-repeat: no-repeat;
@@ -1679,7 +1675,6 @@ h2.reviews__head {
 .special {
   width: 100%;
   padding-top: 40px;
-  height: 100vh;
   background-color: #777;
   background: url('../img/bg/bg6.jpg');
   background-repeat: no-repeat;
